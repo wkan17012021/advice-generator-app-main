@@ -4,12 +4,12 @@ const adviceNumber = document.getElementById("advice-num");
 const randQuote = document.querySelector(".quote-wrapper");
 const quoteBtn = document.getElementById("quote-generator");
 // event listener to fire API fetch
-const handleClick = quoteBtn.addEventListener("click", () => {
-  //   console.log("click");
+const handleClick = quoteBtn.addEventListener("click", function() {
   getRandQuote();
 });
 
-// set empty strings for the inner text properties to auto-populate when the data is obtained
+// set empty strings for the inner text properties
+// to auto-populate when the data is obtained
 
 const getRandQuote = async () => {
   regenId = "";
