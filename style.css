@@ -82,6 +82,7 @@ picture img {
 #quote-generator:hover {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
+  box-shadow: hsl(150, 100%, 66%) 0px 5px 40px;
 }
 
 @media (min-width: 500px) {
