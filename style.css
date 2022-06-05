@@ -3,6 +3,7 @@ html {
   font-size: 180%;
   /*  1rem = roughly 20px */
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -10,11 +11,13 @@ html {
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 body {
   font-family: "Manrope", sans-serif;
+  background-color: azure;
   background-color: hsl(218, 23%, 16%);
   line-height: 1.5;
   padding: 0;
@@ -25,9 +28,11 @@ body {
 main {
   max-width: 90vw;
   margin: 7rem auto 0 auto;
+  background-color: black;
   background-color: hsl(217, 19%, 24%);
   border-radius: 0.5rem;
   -webkit-box-shadow: 5px 10px 18px #888888;
+  -moz-box-shadow: 5px 10px 18px #888888;
   box-shadow: 5px 10px 18px #888888;
   display: flex;
   flex-direction: column;
@@ -42,6 +47,7 @@ main {
 }
 
 .advice-num-wrapper * {
+  color: greenyellow;
   color: hsl(150, 100%, 66%);
   font-size: 0.5rem;
   text-transform: uppercase;
@@ -49,6 +55,7 @@ main {
 }
 
 .quote-wrapper {
+  color: whitesmoke;
   color: hsl(193, 38%, 86%);
   font-weight: 800;
   text-align: center;
@@ -62,25 +69,31 @@ picture img {
   height: auto;
 }
 
-#quote-generator {
+.quote-generator {
+  background: greenyellow;
   background: hsl(150, 100%, 66%);
   border-radius: 50%;
   width: 2rem;
   height: 2rem;
   position: relative;
   top: 30px;
-  -webkit-transition: 0.5s all linear;
   transition: 0.5s all linear;
+  -webkit-transition: 0.5s all linear;
+  -moz-transition: 0.5s all linear;
+  -o-transition: 0.5s all linear;
 }
 
-#quote-generator img {
+.quote-generator img {
   margin: auto;
 }
 
-#quote-generator:hover {
+.quote-generator:hover {
   -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
   transform: scale(1.1);
-  box-shadow: hsl(150, 100%, 66%) 0px 5px 40px;
+  box-shadow: hsl(150, 100%, 66%) 1px 5px 40px;
   cursor: pointer;
 }
 
@@ -89,4 +102,3 @@ picture img {
     max-width: 500px;
   }
 }
-
