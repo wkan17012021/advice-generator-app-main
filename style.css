@@ -38,16 +38,14 @@ main {
 .advice-num-wrapper {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .advice-num-wrapper * {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
-.advice-num-wrapper h2 {
   color: hsl(150, 100%, 66%);
   font-size: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .quote-wrapper {
@@ -83,6 +81,7 @@ picture img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
   box-shadow: hsl(150, 100%, 66%) 0px 5px 40px;
+  cursor: pointer;
 }
 
 @media (min-width: 500px) {
